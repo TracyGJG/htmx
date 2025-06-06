@@ -10,7 +10,7 @@ your htmx webpage in real-time.
 SSE is a lightweight alternative to WebSockets that works over existing HTTP connections, so it is easy to use through
 proxy servers and firewalls. Remember, SSE is a uni-directional service, so you cannot send any messages to an SSE
 server once the connection has been established. If you need bi-directional communication, then you should consider
-using [WebSockets](@web-sockets.md) instead.
+using [WebSockets](@/extensions/ws.md) instead.
 
 This extension replaces the experimental `hx-sse` attribute built into previous versions of htmx. For help migrating
 from older versions, see the migration guide at the bottom of this page.
@@ -30,7 +30,7 @@ The fastest way to install `sse` is to load it via a CDN. Remember to always inc
 ```HTML
 <head>
     <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/htmx-ext-sse@2.2.2" integrity="sha384-Y4gc0CK6Kg+hmulDc6rZPJu0tqvk7EWlih0Oh+2OkAi1ZDlCbBDCQEE2uVk472Ky" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmx-ext-sse@2.2.3" integrity="sha384-Y4gc0CK6Kg+hmulDc6rZPJu0tqvk7EWlih0Oh+2OkAi1ZDlCbBDCQEE2uVk472Ky" crossorigin="anonymous"></script>
 </head>
 <body hx-ext="sse">
 ```
